@@ -1,0 +1,37 @@
+###
+GET http://localhost:3000/routes
+
+###
+GET http://localhost:3000/routes/64e7c32f2f161c7a0a442729
+
+###
+POST http://localhost:3000/routes
+Content-Type: application/json
+
+{
+  "name": "rota teste",
+  "source_id": "ChIJzT4jB2syWpMRDp8bjfKS9nc",
+  "destination_id": "ChIJvSXc9ck6WpMRXBOVlfH8-bM"
+}
+
+###
+PATCH http://localhost:3000/routes/64e7c32f2f161c7a0a442729
+Content-Type: application/json
+
+{
+  "name": "rota teste 2",
+  "source_id": "ChIJzT4jB2syWpMRDp8bjfKS9nc",
+  "destination_id": "ChIJvSXc9ck6WpMRXBOVlfH8-bM"
+}
+
+###
+DELETE http://localhost:3000/routes/64e7c32f2f161c7a0a442729
+
+
+# PLACES
+
+###
+GET http://localhost:3000/places?text=águas claras, df
+
+###
+GET http://localhost:3000/directions?originId=ChIJzT4jB2syWpMRDp8bjfKS9nc&destinationId=ChIJvSXc9ck6WpMRXBOVlfH8-bM
